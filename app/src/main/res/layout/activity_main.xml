@@ -38,14 +38,16 @@
 
         android:text="Refresh" />
 
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:backgroundTint="@color/black"
-        android:textStyle="bold"
-        android:textAppearance="?android:attr/textAppearanceListItemSmall"
 
-        />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            />
 
 </LinearLayout>

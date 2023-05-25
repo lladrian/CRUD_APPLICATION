@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 //import android.os.AsyncTask;
+import android.graphics.Color;
 import android.os.Bundle;
 //import android.view.View;
 import android.view.View;
@@ -134,7 +135,12 @@ public class MainActivity extends AppCompatActivity {
 
         listView = findViewById(R.id.listView);
         dataList = new ArrayList<>();
-        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, dataList);
+        //adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, dataList);
+       // listView.setAdapter(adapter);
+
+        // Choose the desired background color for each item
+        int itemBackgroundColor = Color.parseColor("#2596be"); // Example: red color
+        adapter = new CustomAdapter(this, android.R.layout.simple_list_item_1, dataList, itemBackgroundColor);
         listView.setAdapter(adapter);
 
         // Set item click listener
